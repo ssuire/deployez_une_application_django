@@ -8,7 +8,7 @@ from .forms import ContactForm, ParagraphErrorList
 
 
 def index(request):
-    AIS
+
     albums = Album.objects.filter(available=True).order_by('-created_at')[:12]
     context = {
         'albums': albums
